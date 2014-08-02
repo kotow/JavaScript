@@ -1,0 +1,131 @@
+@font-face {
+  font-family: 'FontaWe';
+  /*src: url('somefont.eot');*/
+  src: url('somefont.ttf') format('truetype');
+}
+
+body {
+  font-family: arial, sans-serif;
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; 
+  background-color: black;
+  background-image: url("../imgs/start.png");
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+.menu {
+    margin:0px;
+    padding:0px;
+    text-align: center;
+    margin-top: 15%;
+}
+button{
+    margin:0px;
+    margin-top: 20%;
+    padding:0px;
+    width: 207px;
+    /*height: 35px;*/
+    background-color: #4d4946;
+    color: #a26e15;
+    font-weight: bold;
+    font-size:1.5em;
+    padding: 5px;
+    border:0px;
+    border-radius: 3px;
+    margin: 0px 70px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #34230d;
+    color: #db9126;
+}
+
+.teamLogo{
+    margin: auto;
+    margin-top: 1%;
+    height: 77px;
+    width: 450px;
+    background-image: url("../imgs/ansuz.png");
+}
+
+* { 
+  margin:0; 
+  padding:0; 
+  } 
+
+html { 
+  width:100%; 
+  height:100%; 
+  } 
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid black;
+  z-index: 1;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+div#lives {
+  width: 200px;
+  height: 32px;
+  font: 20px Verdana;
+  line-height: 32px;
+  color: #fff;
+  background: url(../imgs/lives.png) no-repeat 10px center;
+  z-index: 18;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px 10px 10px 50px;
+  margin: 0;
+  /* Disable crappy selection while using mouse ingame */
+  -moz-user-select: none; 
+  -khtml-user-select: none; 
+  -webkit-user-select: none; 
+  -o-user-select: none; 
+}
+
+div#score {
+  width: 200px;
+  height: 32px;
+  font: 20px Verdana;
+  line-height: 32px;
+  color: #fff;
+  background: url(../imgs/rune1.png) no-repeat right center;
+  z-index: 18;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px 45px 10px 10px;
+  margin: 0 10px 0 0;
+  text-align: right;
+  /* Disable crappy selection while using mouse ingame */
+  -moz-user-select: none; 
+  -khtml-user-select: none; 
+  -webkit-user-select: none; 
+  -o-user-select: none; 
+}
+
+#gameover {
+  font: 120px 'FontaWe';
+  color: #ba0000;
+  text-shadow: 0px 0px 10px rgba(186, 0, 0, 1);
+}
